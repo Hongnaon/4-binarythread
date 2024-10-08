@@ -143,6 +143,7 @@ TreeNode* pop(Stack* s) {
 // ===================================================================
 
 void BinaryTreeInOrder(TreeNode* root) {
+    printf("Binary tree inorder: ");
     Stack s;
     initStack(&s);
     TreeNode* curr = root;
@@ -163,6 +164,8 @@ void BinaryTreeInOrder(TreeNode* root) {
 }
 
 void ThreadTreeInOrder(ThreadTree* root) {
+
+    printf("Thread tree inorder: ");
     if (root == NULL) return;
 
     ThreadTree* current = root;
